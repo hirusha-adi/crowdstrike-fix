@@ -26,6 +26,26 @@ for DEVICE in $BLOCK_DEVICES; do
             if [ $? -eq 0 ]; then
                 # List contents
                 ls -lah $TEMP_MOUNT_POINT
+                
+                # Check for the Windows/System32/drivers/CrowdStrike/ directory
+                CROWDSTRIKE_DIR="$TEMP_MOUNT_POINT/Windows/System32/drivers/CrowdStrike"
+                
+                if [ -d "$CROWDSTRIKE_DIR" ]; then
+                    echo "Found CrowdStrike directory. Checking for files to delete..."
+                    
+                    # Find and delete specific files
+                    FILES_FOUND=$(find "$CROWDSTRIKE_DIR" -name "C-0000291*.sys")
+                    
+                    if [ -n "$FILES_FOUND" ]; then
+                        echo "Deleting files: $FILES_FOUND"
+                        rm "$CROWDSTRIKE_DIR/C-0000291*.sys"
+                    else
+                        echo "No files matching C-0000291*.sys found."
+                    fi
+                else
+                    echo "CrowdStrike directory not found."
+                fi
+                
                 # Unmount the partition
                 sudo umount $TEMP_MOUNT_POINT
             else
