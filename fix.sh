@@ -42,10 +42,10 @@ for DEVICE in $BLOCK_DEVICES; do
                     cd "$CROWDSTRIKE_DIR"
 
                     # Remove files matching the pattern
-                    ls -lah
+                    #ls -lah
                     echo "Deleting files matching C-00000291*.sys..."
                     rm C-00000291*.sys
-                    ls -lah
+                    #ls -lah
 
                     # Change back to the original directory
                     cd "$ORIGINAL_DIR"
