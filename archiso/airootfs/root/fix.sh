@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Starting the fix script..."
+
 # Create a temporary mount point
 TEMP_MOUNT_POINT="/mnt/temp_mount_point"
 
@@ -67,3 +69,8 @@ done
 
 # Clean up: remove the temporary mount point directory
 rmdir $TEMP_MOUNT_POINT
+
+# shutdown after running the script
+echo "Device fixed successfully, shutting down..."
+sleep 4
+shutdown now
