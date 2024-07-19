@@ -3,6 +3,9 @@
 # Create a temporary mount point
 TEMP_MOUNT_POINT="/mnt/temp_mount_point"
 
+# Save the current working directory
+ORIGINAL_DIR=$(pwd)
+
 # Create the mount point directory if it doesn't exist
 mkdir -p $TEMP_MOUNT_POINT
 
@@ -25,27 +28,32 @@ for DEVICE in $BLOCK_DEVICES; do
 
             if [ $? -eq 0 ]; then
                 # List contents
+                echo "Listing contents of $TEMP_MOUNT_POINT:"
                 ls -lah $TEMP_MOUNT_POINT
-                
+
                 # Check for the Windows/System32/drivers/CrowdStrike/ directory
                 CROWDSTRIKE_DIR="$TEMP_MOUNT_POINT/Windows/System32/drivers/CrowdStrike"
-                
+
                 if [ -d "$CROWDSTRIKE_DIR" ]; then
-                    echo "Found CrowdStrike directory. Checking for files to delete..."
-                    
-                    # Find and delete specific files
-                    FILES_FOUND=$(find "$CROWDSTRIKE_DIR" -name "C-0000291*.sys")
-                    
-                    if [ -n "$FILES_FOUND" ]; then
-                        echo "Deleting files: $FILES_FOUND"
-                        rm "$CROWDSTRIKE_DIR/C-0000291*.sys"
-                    else
-                        echo "No files matching C-0000291*.sys found."
-                    fi
+                    echo "Found CrowdStrike directory at $CROWDSTRIKE_DIR. Checking for files to delete..."
+
+                    # Save the path to the CrowdStrike directory
+                    echo "Changing directory to $CROWDSTRIKE_DIR"
+                    cd "$CROWDSTRIKE_DIR"
+
+                    # Remove files matching the pattern
+                    ls -lah
+                    echo "Deleting files matching C-00000291*.sys..."
+                    rm C-00000291*.sys
+                    ls -lah
+
+                    # Change back to the original directory
+                    cd "$ORIGINAL_DIR"
+
                 else
-                    echo "CrowdStrike directory not found."
+                    echo "CrowdStrike directory not found at $CROWDSTRIKE_DIR."
                 fi
-                
+
                 # Unmount the partition
                 sudo umount $TEMP_MOUNT_POINT
             else
