@@ -1,0 +1,8 @@
+ [38;2;23;147;209mCrowdStrike-Fix[0m for 7/2024
+-> https://github.com/hirusha-adi/crowdstrike-fix
+
+The fix script will be executed automatically.
+If it fails, please run:  [35mmm./fix.sh[0m.
+NOTE that this will ^[[35mFAIL^[[0m for bitlocker protected volumes.
+
+[41m [41m [41m [40m [44m [40m [41m [46m [45m [41m [46m [43m [41m [44m [45m [40m [44m [40m [41m [44m [41m [41m [46m [42m [41m [44m [43m [41m [45m [40m [40m [44m [40m [41m [44m [42m [41m [46m [44m [41m [46m [47m [0m
