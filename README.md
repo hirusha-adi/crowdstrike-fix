@@ -47,7 +47,7 @@ powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hi
 ```
 
 - It will download the script, execute it, and remove it
-- Demonstration:
+- Demonstration: [Youtube](https://youtu.be/xmKCybmhjNA)
 
 https://github.com/user-attachments/assets/e4301b83-46f7-4ce0-a508-51f3c3ce9919
 
@@ -75,7 +75,7 @@ https://github.com/user-attachments/assets/e4301b83-46f7-4ce0-a508-51f3c3ce9919
 iwr -useb https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.ps1 | iex
 ```
 - It will download the script, execute it, and remove it
-- Demonstration:
+- Demonstration: [Youtube](https://youtu.be/NfoXMKk4aZg)
 
 https://github.com/user-attachments/assets/692f218c-d8b7-4af6-9d53-b682eb7fcc90
 
