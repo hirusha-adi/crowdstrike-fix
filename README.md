@@ -18,7 +18,7 @@ This will not work if the volume in which the Windows installation exists is enc
 - You can then eject the pendrive and boot to Windows.
 - TODO: Add images and video guides.
 
-### Using the script
+### Using the script on Linux ISO
 
 - If you are already booted into a Linux distribution, you can run the fix script directly,
 
@@ -33,9 +33,39 @@ chmod +x fix.sh
 ./fix.sh
 ```
 
+### Using the Batch file
+
+- If you don't want to use the ISO, you can use the batch script
+
+#### One Liner
+
+- NOTE that an internet connection is required to do this
+- Open CMD as an Administrator and run the command below
+
+```bat
+powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.bat -OutFile fix.bat; Start-Process fix.bat -Wait; Remove-Item fix.bat"
+```
+
+- It will download the script, execute it, and remove it
+- Demonstration:
+
+https://github.com/user-attachments/assets/e4301b83-46f7-4ce0-a508-51f3c3ce9919
+
+#### Via the GUI
+
+- [Click here](https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.bat) to download the file.
+- Right click and Run as administrator.
+
+![image](https://github.com/user-attachments/assets/19ce821a-3057-498f-9fd6-7a1647c2eab5)
+
+- The script should work as intended.
+
+![image](https://github.com/user-attachments/assets/9091a913-ab9c-4bb1-a083-aeac20fcf0db)
+
+
 ## Manual Steps
 
-## if BitLocker is not enabled
+## if BitLocker is not enabled.
 
 1. Boot Windows into safe mode
 2. Go to `C:\Windows\System32\drivers\CrowdStrike`
