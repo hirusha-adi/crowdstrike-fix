@@ -18,7 +18,7 @@ This will not work if the volume in which the Windows installation exists is enc
 - You can then eject the pendrive and boot to Windows.
 - TODO: Add images and video guides.
 
-### Using the script on Linux ISO
+### Using the script by booting into a Linux distro
 
 - If you are already booted into a Linux distribution, you can run the fix script directly,
 
