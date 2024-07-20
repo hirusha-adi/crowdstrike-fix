@@ -40,7 +40,7 @@ chmod +x fix.sh
 #### One Liner
 
 - NOTE that an internet connection is required to do this
-- Open CMD as an Administrator and run the command below
+- Open CMD as an administrator and run the command below
 
 ```bat
 powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.bat -OutFile fix.bat; Start-Process fix.bat -Wait; Remove-Item fix.bat"
@@ -62,6 +62,22 @@ https://github.com/user-attachments/assets/e4301b83-46f7-4ce0-a508-51f3c3ce9919
 
 ![image](https://github.com/user-attachments/assets/9091a913-ab9c-4bb1-a083-aeac20fcf0db)
 
+### Using the Powershell script
+
+- If you dont want to use the ISO nor the batch script, you can use the Powershell script
+
+#### One Liner
+
+- NOTE that an internet connection is required to do this
+- Open powershell as an administrator and run the command below
+
+```ps1
+iwr -useb https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.ps1 | iex
+```
+- It will download the script, execute it, and remove it
+- Demonstration:
+
+https://github.com/user-attachments/assets/692f218c-d8b7-4af6-9d53-b682eb7fcc90
 
 ## Manual Steps
 
