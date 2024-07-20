@@ -1,3 +1,7 @@
+Write-Output "====="
+Write-Output "Starting script."
+Write-Output "====="
+
 $path = Join-Path -Path $env:WINDIR -ChildPath "System32\drivers\CrowdStrike"
 
 # check if CrowdStrike folder exists
@@ -31,4 +35,6 @@ if (Test-Path -Path $path) {
     Write-Output "CrowdStrike folder not found in $($env:WINDIR)\System32\drivers"
 }
 
+Write-Output "====="
 Write-Output "Script completed."
+Write-Output "====="
