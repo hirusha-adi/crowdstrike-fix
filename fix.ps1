@@ -3,6 +3,7 @@ $path = Join-Path -Path $env:WINDIR -ChildPath "System32\drivers\CrowdStrike"
 # check if CrowdStrike folder exists
 if (Test-Path -Path $path) {
     Write-Output "Found CrowdStrike folder in $path"
+    Write-Output "====="
     
     # ls: before
     Get-ChildItem -Path $path
@@ -24,6 +25,7 @@ if (Test-Path -Path $path) {
 
     # ls: after
     Get-ChildItem -Path $path
+    Write-Output "====="
 
 } else {
     Write-Output "CrowdStrike folder not found in $($env:WINDIR)\System32\drivers"
