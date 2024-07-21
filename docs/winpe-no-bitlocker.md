@@ -51,7 +51,7 @@ https://github.com/user-attachments/assets/e703600f-9b48-45be-8531-96a8018cc211
 
 ![WhatsApp Image 2024-07-21 at 14 40 52_f9e35187](https://github.com/user-attachments/assets/0e9a624e-a0f3-47e5-87ab-93dcff139277)
 
-- Update the files as required, you can copy the files in the `winpe` directory if this github repository to it
+- Update the files as required, you can copy the files in the `winpe` directory if this github repository to it, you can also go to upper levels of this directory and find the Wallpapers directory, this is where you can update the Wallpaper
 
 ![WhatsApp Image 2024-07-21 at 14 41 03_914c2f50](https://github.com/user-attachments/assets/2d34d0b5-1565-4ee1-9b11-620296e76127)
 
