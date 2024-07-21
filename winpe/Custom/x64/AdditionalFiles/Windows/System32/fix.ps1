@@ -45,3 +45,11 @@ foreach ($drive in $drives) {
 Write-Output "====="
 Write-Output "Script completed."
 Write-Output "====="
+Write-Output " "
+$userInput = Read-Host -Prompt "Press [Enter] to shutdown... (enter 'no' to exit without shutting down)"
+if ($userInput -like 'n*') {
+    Write-Host "Shutdown canceled."
+} else {
+    Write-Host "Shutting down the computer..."
+    Stop-Computer
+}
