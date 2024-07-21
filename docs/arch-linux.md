@@ -1,14 +1,14 @@
 # Fix with an Arch Linux based ISO
 
+Summary:
+
+- A bootable image based on Arch Linux (made with archiso) that will run a fix script once booted into it and restart the computer automatically
+
 Directory: `archiso`
 
 Supports Bitlocker Encryption?: No
 
 Demonstration: [Youtube Video](https://youtu.be/UnnPh6e8-dY)
-
-Summary:
-
-- A bootable image based on Arch Linux (made with archiso) that will run a fix script once booted into it and restart the computer automatically
 
 ## FAILED - DO NOT USE THIS!
 

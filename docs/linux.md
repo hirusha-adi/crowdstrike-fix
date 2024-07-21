@@ -1,10 +1,10 @@
 # Fix by booting from a Linux distribution
 
-Supports Bitlocker Encryption?: No
-
 Summary:
 
 - (live) boot into a Linux distribution from the affected computer and execute a the fix script.
+
+Supports Bitlocker Encryption?: No
 
 ## Usage Guide
 

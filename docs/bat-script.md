@@ -1,12 +1,14 @@
 # Fix with a Batch script
 
+Summary:
+
+- A batch script that you can run in safemode to fix the issue
+
 Supports Bitlocker Encryption?: No
 
 Demonstration: [Youtube Video](https://youtu.be/xmKCybmhjNA)
 
-Summary:
-
-- A batch script that you can run in safemode to fix the issue
+https://github.com/user-attachments/assets/e4301b83-46f7-4ce0-a508-51f3c3ce9919
 
 ## One Liner
 
@@ -18,9 +20,6 @@ powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hi
 ```
 
 - It will download the script, execute it, and remove it
-- Demonstration: [Youtube](https://youtu.be/xmKCybmhjNA)
-
-https://github.com/user-attachments/assets/e4301b83-46f7-4ce0-a508-51f3c3ce9919
 
 ## Via the GUI
 

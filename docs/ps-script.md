@@ -1,12 +1,12 @@
 # Fix with a Powershell script
 
-Supports Bitlocker Encryption?: No
-
-Demonstration: scroll down...
-
 Summary:
 
 - A powershell script that you can run in safemode to fix the issue
+
+Supports Bitlocker Encryption?: No
+
+Demonstration: scroll down...
 
 #### One Liner (internet required)
 
