@@ -1,4 +1,4 @@
-# Manual Fix
+# Fix manually
 
 ## If BitLocker is not enabled
 

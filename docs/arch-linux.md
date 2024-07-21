@@ -1,4 +1,4 @@
-# Arch Linux based ISO to fix CrowdStrike
+# Fix with an Arch Linux based ISO
 
 Directory: `archiso`
 
