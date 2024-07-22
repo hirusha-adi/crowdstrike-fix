@@ -68,6 +68,37 @@ Dism /Unmount-Image /MountDir:F:\WinPeImg\mount /Commit
 MakeWinPEMedia /ISO F:\WinPeImg F:\WinPeImg\WinPE_with_PowerShell_and_Script.iso
 ```
 
+### Errors
+
+- Incase if something fails (eg: failed to unmount), you can discard the mounted images manually:
+
+  - list currently all mounted images
+
+  ```
+  dism /Get-MountedWimInfo
+  ```
+
+  - discard them manually
+
+  ```
+  dism /Unmount-Wim /MountDir:"C:\path\to\mount\directory" /Discard
+  ```
+
+  - examples (discarding):
+
+  ```
+  rmdir /S /Q "F:\$RECYCLE.BIN\S-1-5-21-2354160538-1415017437-1919434616-1001\$RLCKGKP\mount"
+  rmdir /S /Q "F:\winpe\mount"
+  ```
+
+  - cleanup the dism Environment
+
+  ```
+  dism /Cleanup-Wim
+  ```
+
+  - and now, you can retry
+
 ## References
 
 - https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-adding-powershell-support-to-windows-pe?view=windows-11
