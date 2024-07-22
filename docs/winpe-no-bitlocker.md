@@ -4,6 +4,12 @@
 
 ### Setting up the envrionment
 
+- Download and install the [Windows Assessment and Deployment Kit (ADK)](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install) and matching WinPE add-on.
+
+- For ADK versions prior to Windows 10, version 1809, WinPE is part of the ADK and isn't a separate add-on.
+
+- Start the Deployment and Imaging Tools Environment as an administrator.
+
 ### Initial Setup
 
 - Create a working copy of the Windows PE files
