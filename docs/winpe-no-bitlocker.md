@@ -1,5 +1,23 @@
 # Fix using a WindowsPE Image
 
+## Usage Guide
+
+Versions:
+
+- Bypass Version
+  - Download: Click Here
+  - Details: Script runs as `-ExecutionPolicy Bypass`
+- Unrestricted Version
+  - Download: Click Here
+  - Details: Script runs as `-ExecutionPolicy Unrestricted`
+
+1. Download the ISO file according to your need from the above section
+2. Make your pendrive bootable with this file
+3. Plug-in the bootable pendrive to your device and boot from it.
+4. Wait for it to load and fix the disk.
+5. Once the script has finished its execution, your device will be shutdown automatically.
+6. You can then eject the pendrive and boot to Windows.
+
 ## Building the Image
 
 ### Setting up the envrionment
