@@ -4,6 +4,10 @@ Scripts are written by [Tiraj Adikari](https://www.linkedin.com/in/tiraj-adikari
 
 Supports Bitlocker Encryption?: Yes.
 
+Demonstration: [Youtube](https://youtu.be/Q5f-0AtUH-4?si=jm-gf8_64ZxSSpCT)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q5f-0AtUH-4?si=s0pXJ4mFBDzAZvwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Usage Guide
 
 1. Export BitcLoker keys from the Active Directory ([click here](#exporting-bitlocker-keys)).
