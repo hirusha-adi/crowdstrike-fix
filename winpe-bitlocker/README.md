@@ -8,7 +8,6 @@ Demonstration: [Youtube](https://youtu.be/Q5f-0AtUH-4?si=jm-gf8_64ZxSSpCT)
 
 ![image](https://github.com/user-attachments/assets/0d403688-711f-4486-b3ed-7e82e8276f03)
 
-
 ## Usage Guide
 
 1. Export BitcLoker keys from the Active Directory ([click here](#exporting-bitlocker-keys)).
@@ -95,7 +94,7 @@ Dism /Unmount-Image /MountDir:C:\WinPEImg\mount /Commit
 - Build the ISO
 
 ```
-MakeWinPEMedia /ISO C:\WinPEImg C:\WinPEImg\WinPE_with_PowerShell_and_Script.iso
+MakeWinPEMedia /ISO C:\WinPEImg C:\WinPEImg\WinPE_ISO.iso
 ```
 
 ### Errors

@@ -91,7 +91,7 @@ Dism /Unmount-Image /MountDir:C:\WinPEImg\mount /Commit
 - Build the ISO
 
 ```
-MakeWinPEMedia /ISO C:\WinPEImg C:\WinPEImg\WinPE_with_PowerShell_and_Script.iso
+MakeWinPEMedia /ISO C:\WinPEImg C:\WinPEImg\WinPE_ISO.iso
 ```
 
 ### Errors
