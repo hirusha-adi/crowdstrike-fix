@@ -4,19 +4,17 @@ To easily fix the issue that arose in 7/19/2024.
 
 ### Fix with Windows PE (+ BitLocker support)
 
-IMAGEHERE
+![image](https://github.com/user-attachments/assets/1e1821f9-5b2c-481a-8e0e-d7ed194af737)
 
 [Click here](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/winpe-bitlocker) to learn more. Made by Tiraj Adikari.
 
 ### Fix with Windows PE
 
-IMAGEHERE
-
 [Click here](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/winpe) to learn more. Made by Hirusha Adikari.
 
 ### Fix with a custom Windows image (+ optional BitcLocker support)
 
-IMAGEHERE
+![image](https://github.com/user-attachments/assets/060dcc17-eecc-4b2c-a891-45c8c56793b9)
 
 [Click here](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/win) to learn more. This is different from Windows PE, you will have an interactive envrionment with a graphical user interface. Made by Hirusha Adikari.
 
