@@ -33,13 +33,13 @@ Versions:
 - Create a working copy of the Windows PE files
 
 ```
-copype amd64 F:\WinPeImg
+copype amd64 C:\WinPEImg
 ```
 
 - Mount your WinPE image
 
 ```
-Dism /Mount-Image /ImageFile:"F:\WinPeImg\media\sources\boot.wim" /Index:1 /MountDir:"F:\WinPeImg\mount"
+Dism /Mount-Image /ImageFile:"C:\WinPEImg\media\sources\boot.wim" /Index:1 /MountDir:"C:\WinPEImg\mount"
 ```
 
 ### Add powershell
@@ -47,18 +47,18 @@ Dism /Mount-Image /ImageFile:"F:\WinPeImg\media\sources\boot.wim" /Index:1 /Moun
 - Add powershell and it's dependencies
 
 ```
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WMI.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WMI_en-us.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-NetFX.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-NetFX_en-us.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Scripting.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Scripting_en-us.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-PowerShell.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-PowerShell_en-us.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-StorageWMI.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-StorageWMI_en-us.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-DismCmdlets.cab"
-Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-DismCmdlets_en-us.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WMI.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WMI_en-us.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-NetFX.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-NetFX_en-us.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Scripting.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Scripting_en-us.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-PowerShell.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-PowerShell_en-us.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-StorageWMI.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-StorageWMI_en-us.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-DismCmdlets.cab"
+Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-DismCmdlets_en-us.cab"
 ```
 
 ### Setup startup script
@@ -66,7 +66,7 @@ Dism /Add-Package /Image:"F:\WinPeImg\mount" /PackagePath:"C:\Program Files (x86
 - Open target System32 folder
 
 ```
-explorer F:\WinPeImg\mount\Windows\System32
+explorer C:\WinPEImg\mount\Windows\System32
 ```
 
 - Update `startnet.cmd` to:
@@ -83,13 +83,13 @@ powershell.exe -ExecutionPolicy Bypass -File .\fix-script.ps1
 - Save the changes and unmount the image
 
 ```
-Dism /Unmount-Image /MountDir:F:\WinPeImg\mount /Commit
+Dism /Unmount-Image /MountDir:C:\WinPEImg\mount /Commit
 ```
 
 - Build the ISO
 
 ```
-MakeWinPEMedia /ISO F:\WinPeImg F:\WinPeImg\WinPE_with_PowerShell_and_Script.iso
+MakeWinPEMedia /ISO C:\WinPEImg C:\WinPEImg\WinPE_with_PowerShell_and_Script.iso
 ```
 
 ### Errors
