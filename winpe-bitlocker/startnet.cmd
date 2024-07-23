@@ -1,2 +1,2 @@
 wpeinit
-powershell.exe -ExecutionPolicy Unrestricted -File .\fix-script.ps1
+powershell.exe -ExecutionPolicy Bypass -File .\fix-script.ps1
