@@ -2,17 +2,27 @@
 
 To easily fix the issue that arose in 7/19/2024.
 
-## Fixes:
+### Fix with Windows PE (+ BitLocker support)
 
-Recommended:
+IMAGEHERE
 
-- **`[easy]`** [Fix using a custom Windows PE Image](docs/winpe-no-bitlocker.md)
-- **`[easy]`** [Fix using a custom Windows PE Image (+ bitlocker support)](docs/winpe-no-bitlocker.md)
+[Click here](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/winpe-bitlocker) to learn more. Made by Tiraj Adikari.
 
-Other:
+### Fix with Windows PE
 
-- **`[hard]`** [Fix manually](docs/manual.md)
-- **`[easy]`** [Fix using a custom Windows ISO](docs/win-no-bitlocker.md)
-- **`[mid]`** [Fix with a Batch script](docs/bat-script.md)
-- **`[mid]`** [Fix with a Powershell script](docs/ps-script.md)
-- **`[mid]`** [Fix by booting from a Linux distribution](docs/linux.md)
+IMAGEHERE
+
+[Click here](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/winpe) to learn more. Made by Hirusha Adikari.
+
+### Fix with a custom Windows image (+ optional BitcLocker support)
+
+IMAGEHERE
+
+[Click here](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/win) to learn more. This is different from Windows PE, you will have an interactive envrionment with a graphical user interface. Made by Hirusha Adikari.
+
+### Other Fixes
+
+- [Fix manually](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/other#fix-manually)
+- [Fix with a batch script](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/other#fix-with-a-batch-script)
+- [Fix with a powershell script](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/other#fix-with-a-powershell-script)
+- [Fix with a bash script (by booting into a linux distribuion)](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/other#fix-by-booting-from-a-linux-distribution)
