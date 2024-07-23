@@ -1,4 +1,4 @@
-$KeyFilepath = "KeyList.csv"
+$KeyFilepath = "bitlocker-list.csv"
 $csvData = Import-Csv -Path $KeyFilepath
 
 # CrowdStrike Update BSOD issue Fix by Tiraj Adikari - 22 July 2024
