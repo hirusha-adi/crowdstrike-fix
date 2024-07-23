@@ -2,21 +2,23 @@
 
 ## Usage Guide
 
-Versions:
+1. Export BitcLoker keys from the Active Directory ([click here](#exporting-bitlocker-keys)).
+2. Build the Windows PE Image ([click here](#building-the-image)).
+3. Make your pendrive bootable with this file.
+4. Plug-in the bootable pendrive to your device and boot from it.
+5. Wait for it to load and fix the disk.
+6. Once the script has finished its execution, your device will be shutdown automatically.
+7. You can then eject the pendrive and boot to Windows.
 
-- Bypass Version
-  - Download: Click Here
-  - Details: Script runs as `-ExecutionPolicy Bypass`
-- Unrestricted Version
-  - Download: Click Here
-  - Details: Script runs as `-ExecutionPolicy Unrestricted`
+## Exporting BitLocker keys
 
-1. Download the ISO file according to your need from the above section
-2. Make your pendrive bootable with this file
-3. Plug-in the bootable pendrive to your device and boot from it.
-4. Wait for it to load and fix the disk.
-5. Once the script has finished its execution, your device will be shutdown automatically.
-6. You can then eject the pendrive and boot to Windows.
+- Execute the `export-keys-from-ad.ps1` script and export the bitcloker keys from the Active Directory
+
+```
+powershell.exe  -ExecutionPolicy Unrestricted  -file export-keys-from-ad.ps1
+```
+
+- The `.csv` file will be saved at: `C:\bitlocker-list.csv`
 
 ## Building the Image
 
@@ -61,7 +63,7 @@ Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86
 Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-DismCmdlets_en-us.cab"
 ```
 
-### Setup startup script
+### Setup fix script
 
 - Open target System32 folder
 
@@ -69,14 +71,9 @@ Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86
 explorer C:\WinPEImg\mount\Windows\System32
 ```
 
-- Update `startnet.cmd` to:
-
-```
-wpeinit
-powershell.exe -ExecutionPolicy Bypass -File .\fix-script.ps1
-```
-
-- Copy the `fix-script.ps1` to that same directory
+- Copy and replace the `startnet.cmd` in the target System32 folder.
+- Copy the `fix-script.ps1` to the target System32 folder.
+- Copy the [exported](#exporting-bitlocker-keys) bitlocker keys at `C:\bitlocker-list.csv` to the target System32 folder.
 
 ### Build the image
 
