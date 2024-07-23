@@ -1,6 +1,6 @@
 # Fix using a WindowsPE Image
 
-Scripts are written by [Tiraj Adikari](https://www.linkedin.com/in/tiraj-adikari-a1686229/?originalSubdomain=au)
+Credits: [Tiraj Adikari](https://www.linkedin.com/in/tiraj-adikari-a1686229/?originalSubdomain=au)
 
 Supports Bitlocker Encryption?: Yes.
 
