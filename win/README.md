@@ -47,7 +47,7 @@ https://github.com/user-attachments/assets/e703600f-9b48-45be-8531-96a8018cc211
 
 ![WhatsApp Image 2024-07-21 at 14 42 27_e7b25121](https://github.com/user-attachments/assets/f20b4295-eef1-4159-ad78-8a92c7bb5fb2)
 
-- Come back to the Script section and under Main Interface, update the settings and displayed here, enable "Add Your Custom Folder", and click on "Open Custom Folder", 
+- Come back to the Script section and under Main Interface, update the settings and displayed here, enable "Add Your Custom Folder", and click on "Open Custom Folder",
 
 ![WhatsApp Image 2024-07-21 at 14 40 52_f9e35187](https://github.com/user-attachments/assets/0e9a624e-a0f3-47e5-87ab-93dcff139277)
 
@@ -72,4 +72,3 @@ https://github.com/user-attachments/assets/e703600f-9b48-45be-8531-96a8018cc211
 ![WhatsApp Image 2024-07-21 at 14 46 41_7e274e17](https://github.com/user-attachments/assets/a465c457-ca5a-4862-a697-91221f5fe866)
 
 - You should now find your `Win10XPE_x64.iso` inside the same directory with `Win10XPE.exe`
-

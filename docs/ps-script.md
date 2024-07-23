@@ -14,7 +14,7 @@ Demonstration: scroll down...
 - Open powershell as an administrator and run the command below
 
 ```ps1
-iwr -useb https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/other/fix.ps1 | iex
 ```
 
 - It will download the script, execute it, and remove it

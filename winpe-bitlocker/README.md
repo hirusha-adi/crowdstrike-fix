@@ -1,5 +1,7 @@
 # Fix using a WindowsPE Image
 
+Supports Bitlocker Encryption?: Yes.
+
 ## Usage Guide
 
 1. Export BitcLoker keys from the Active Directory ([click here](#exporting-bitlocker-keys)).
@@ -71,7 +73,7 @@ Dism /Add-Package /Image:"C:\WinPEImg\mount" /PackagePath:"C:\Program Files (x86
 explorer C:\WinPEImg\mount\Windows\System32
 ```
 
-- Copy and replace the `startnet.cmd` in the target System32 folder.
+- Copy and replace the `startnet.cmd` in the target System32 folder (you can also change the `-ExecutionPolicy` to `Unrestricted` or add any other arguments when autostarting the script my modifying this file).
 - Copy the `fix-script.ps1` to the target System32 folder.
 - Copy the [exported](#exporting-bitlocker-keys) bitlocker keys at `C:\bitlocker-list.csv` to the target System32 folder.
 
@@ -108,8 +110,8 @@ MakeWinPEMedia /ISO C:\WinPEImg C:\WinPEImg\WinPE_with_PowerShell_and_Script.iso
   - examples (discarding):
 
   ```
-  rmdir /S /Q "F:\$RECYCLE.BIN\S-1-5-21-2354160538-1415017437-1919434616-1001\$RLCKGKP\mount"
-  rmdir /S /Q "F:\winpe\mount"
+  dism /Unmount-Wim /MountDir:"F:\$RECYCLE.BIN\S-1-5-21-2354160538-1415017437-1919434616-1001\$RLCKGKP\mount" /Discard
+  dism /Unmount-Wim /MountDir:"F:\winpe\mount" /Discard
   ```
 
   - cleanup the dism Environment
@@ -124,3 +126,7 @@ MakeWinPEMedia /ISO C:\WinPEImg C:\WinPEImg\WinPE_with_PowerShell_and_Script.iso
 
 - https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-adding-powershell-support-to-windows-pe?view=windows-11
 - https://stackoverflow.com/questions/10906990/winpe-auto-scripts
+- https://medium.com/@dbilanoski/how-to-get-bitlocker-recovery-passwords-from-active-directory-using-powershell-with-30a93e8dd8f2
+- https://lazyexchangeadmin.cyou/bitlocker-winpe/
+- https://stackoverflow.com/questions/77462449/how-to-get-bitlocker-recovery-keys-for-intune-device-with-ms-graph
+- https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-adding-powershell-support-to-windows-pe?view=windows-11

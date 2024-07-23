@@ -16,14 +16,14 @@ https://github.com/user-attachments/assets/e4301b83-46f7-4ce0-a508-51f3c3ce9919
 - Open CMD as an administrator and run the command below
 
 ```bat
-powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.bat -OutFile fix.bat; Start-Process fix.bat -Wait; Remove-Item fix.bat"
+powershell -Command "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/other/fix.bat -OutFile fix.bat; Start-Process fix.bat -Wait; Remove-Item fix.bat"
 ```
 
 - It will download the script, execute it, and remove it
 
 ## Via the GUI
 
-- [Click here](https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.bat) to download the file.
+- [Click here](https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/other/fix.bat) to download the file.
 - Right click and Run as administrator.
 
 ![image](https://github.com/user-attachments/assets/19ce821a-3057-498f-9fd6-7a1647c2eab5)

@@ -1,5 +1,7 @@
 # Fix using a WindowsPE Image
 
+Supports Bitlocker Encryption?: No.
+
 ## Usage Guide
 
 Versions:
@@ -111,8 +113,8 @@ MakeWinPEMedia /ISO C:\WinPEImg C:\WinPEImg\WinPE_with_PowerShell_and_Script.iso
   - examples (discarding):
 
   ```
-  rmdir /S /Q "F:\$RECYCLE.BIN\S-1-5-21-2354160538-1415017437-1919434616-1001\$RLCKGKP\mount"
-  rmdir /S /Q "F:\winpe\mount"
+  dism /Unmount-Wim /MountDir:"F:\$RECYCLE.BIN\S-1-5-21-2354160538-1415017437-1919434616-1001\$RLCKGKP\mount" /Discard
+  dism /Unmount-Wim /MountDir:"F:\winpe\mount" /Discard
   ```
 
   - cleanup the dism Environment

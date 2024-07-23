@@ -10,7 +10,7 @@ Supports Bitlocker Encryption?: No
 
 ```bash
 # get the script
-wget https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/fix.sh
+wget https://raw.githubusercontent.com/hirusha-adi/crowdstrike-fix/main/other/fix.sh
 
 # make it executable
 chmod +x fix.sh
