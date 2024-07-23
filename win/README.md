@@ -6,7 +6,7 @@ Summary:
 
 Directory: `winpe`
 
-Supports Bitlocker Encryption?: No
+Supports Bitlocker Encryption?: No by default BUT you can build your own image following this guide that does support Bitlocker.
 
 Download ISO File: [Click here](https://drive.google.com/file/d/1DpG4rdgNYhquszO324B6rgw-LDlEMyzi/view?usp=sharing) (approx. 850MB) (this is based on the `install.wim` file of WIndows 10 Enteprise LTSC 2021)
 
@@ -51,7 +51,9 @@ https://github.com/user-attachments/assets/e703600f-9b48-45be-8531-96a8018cc211
 
 ![WhatsApp Image 2024-07-21 at 14 40 52_f9e35187](https://github.com/user-attachments/assets/0e9a624e-a0f3-47e5-87ab-93dcff139277)
 
-- Update the files as required, you can copy the files in the `winpe` directory if this github repository to it, you can also go to upper levels of this directory and find the Wallpapers directory, this is where you can update the Wallpaper
+- Update the files as required, you can copy the files in this directory if this github repository to it, you can also go to upper levels of this directory and find the Wallpapers directory, this is where you can update the Wallpaper.
+
+- If you want Bitlocker support, you can use files from the `winpe-bitlocker` directory of this repository to get the two required files (the script and the csv of exported bitlocker keys) and place it inside the target System32 directory and continue with the other steps mentioned in this guide.
 
 ![WhatsApp Image 2024-07-21 at 14 41 03_914c2f50](https://github.com/user-attachments/assets/2d34d0b5-1565-4ee1-9b11-620296e76127)
 
