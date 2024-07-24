@@ -6,7 +6,7 @@ Supports Bitlocker Encryption?: Yes.
 
 Demonstration: [Youtube](https://www.youtube.com/watch?v=eIsE5G4tihY)
 
-![image](https://github.com/user-attachments/assets/0d403688-711f-4486-b3ed-7e82e8276f03)
+![image](https://github.com/user-attachments/assets/3e184bde-9627-4d41-b8e4-33a86da339fd)
 
 ## Usage Guide
 
