@@ -4,7 +4,7 @@ Credits: [Tiraj Adikari](https://www.linkedin.com/in/tiraj-adikari-a1686229/?ori
 
 Supports Bitlocker Encryption?: Yes.
 
-Demonstration: [Youtube](https://youtu.be/Q5f-0AtUH-4?si=jm-gf8_64ZxSSpCT)
+Demonstration: [Youtube](https://www.youtube.com/watch?v=eIsE5G4tihY)
 
 ![image](https://github.com/user-attachments/assets/0d403688-711f-4486-b3ed-7e82e8276f03)
 
