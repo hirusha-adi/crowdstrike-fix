@@ -4,7 +4,7 @@ To easily fix the issue that arose in 7/19/2024.
 
 ### [Fix with Windows PE (+ BitLocker support)](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/winpe-bitlocker)
 
-![image](https://github.com/user-attachments/assets/1e1821f9-5b2c-481a-8e0e-d7ed194af737)
+![image](https://github.com/user-attachments/assets/72fb78d5-e05a-491c-9699-59a4dcfe4a7f)
 
 [Click here](https://github.com/hirusha-adi/crowdstrike-fix/tree/main/winpe-bitlocker) to learn more. Made by Tiraj Adikari.
 
